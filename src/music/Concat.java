@@ -28,6 +28,12 @@ public class Concat implements Music {
     public Music first() {
         return first;
     }
+    /**
+     * @return first piece in this concatenation
+     */
+    public Music second(){
+    	return second;
+    }
     
     /**
      * @return duration of this concatenation
