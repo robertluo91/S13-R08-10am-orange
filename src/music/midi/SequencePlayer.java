@@ -202,6 +202,7 @@ public class SequencePlayer {
 
         // create a new player, with 120 beats (i.e. quarter note) per
         // minute, with 2 tick per quarter note
+        try{
         player = new SequencePlayer(120, 2);
 
         final Pitch C = new Pitch('C');
@@ -230,6 +231,8 @@ public class SequencePlayer {
 
         // play!
         player.play();
+        }
+        catch(Exception e){};
 
         /*
          * Note: A possible weird behavior of the Java sequencer: Even if the
